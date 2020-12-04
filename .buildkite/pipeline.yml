@@ -2,7 +2,7 @@ steps:
   - label: Build cocoa IPA
     timeout_in_minutes: 20
     agents:
-      queue: opensource-mac-cocoa
+      queue: opensource-test-queue
     artifact_paths:
       - features/fixtures/ios-swift-cocoapods/output/iOSTestApp.ipa
       - features/fixtures/macos/output/macOSTestApp.zip

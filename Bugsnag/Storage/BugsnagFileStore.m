@@ -227,7 +227,7 @@
 
 - (void)performOnFields:(NSArray *)fieldPath
                  inFile:(NSMutableDictionary *)file
-              operation:(void (^)(id parent, id field))operation
+              operation:(nonnull void (^)(id parent, id field))operation
            okIfNotFound:(BOOL)isOkIfNotFound {
     if (fieldPath.count == 0) {
         bsg_log_err(@"Unexpected end of field path");

@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Path where breadcrumbs are persisted on disk
  */
-@property (readonly) NSString *cachePath;
+@property (readonly, nonatomic) NSString *cachePath;
 
 /**
  * Store a new breadcrumb with a provided message.
